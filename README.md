@@ -4,15 +4,15 @@ Http isteği ile çalışan docker ping konteynır
 
 ## Kurulum:
 
-```
+```shell
 git clone https://github.com/AfatekDevelopers/pingcontainer_http_go.git
 cd pingcontainer_http_go/devafatekpingcontainer
 go mod init github.com/AfatekDevelopers/pingcontainer_http_go/devafatekpingcontainer
 go get
 cd ..
-Dockerfile içindeki tz değeri ayarlanmalı -> "ENV TZ=Europe/Istanbul"
+#Dockerfile içindeki tz değeri ayarlanmalı -> "ENV TZ=Europe/Istanbul"
 sudo docker build -t devafatek/pingcontainerhttpgo .
-docker-compose.yml içindeki port değeri ayarlanmalı -> "PORT: 10001" 
+#docker-compose.yml içindeki port değeri ayarlanmalı -> "PORT: 10001" 
 sudo docker-compose up -d
 ```
 

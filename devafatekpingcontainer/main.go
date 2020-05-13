@@ -11,6 +11,7 @@ import (
 	"github.com/AfatekDevelopers/ping_lib_go/devafatekping"
 )
 
+//ResultVal return value for request
 type ResultVal struct {
 	Host    string `json:"host"`
 	Result  bool   `json:"result"`
@@ -26,6 +27,7 @@ func main() {
 
 }
 
+//Index root request path
 func Index(w http.ResponseWriter, r *http.Request) {
 
 	var ipAddress string = "192.168.1.1"

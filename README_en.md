@@ -4,15 +4,15 @@ Docker ping container working with http request
 
 ## Installation:
 
-```
+```shell
 git clone https://github.com/AfatekDevelopers/pingcontainer_http_go.git
 cd pingcontainer_http_go/devafatekpingcontainer
 go mod init github.com/AfatekDevelopers/pingcontainer_http_go/devafatekpingcontainer
 go get
 cd ..
-tz value in the Dockerfile should be set -> "ENV TZ=Europe/Istanbul"
+#tz value in the Dockerfile should be set -> "ENV TZ=Europe/Istanbul"
 sudo docker build -t devafatek/pingcontainerhttpgo .
-port value in the docker-compose.yml should be set -> "PORT: 10001" 
+#port value in the docker-compose.yml should be set -> "PORT: 10001" 
 sudo docker-compose up -d
 ```
 
