@@ -16,7 +16,7 @@ sudo docker build -t devafatek/pingcontainerhttpgo .
 sudo docker-compose up -d
 ```
 
-## Usage
+## Usage:
 
 ```
 http://127.0.0.1:{port}?ipaddress=192.168.1.1&count=5&timeout=5&v=1
