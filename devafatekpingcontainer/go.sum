@@ -1,0 +1,11 @@
+github.com/AfatekDevelopers/convert_lib_go v0.0.0-20200509215401-b2728138cb60 h1:ChTvRMm7fe07gb+aVrhL42oG9PkN9NzG2WcVI3nj4Fg=
+github.com/AfatekDevelopers/convert_lib_go v0.0.0-20200509215401-b2728138cb60/go.mod h1:14MeA0nuhmoLIUvRs33j8sd5dq5Aiqx1I4CyZSktFd4=
+github.com/AfatekDevelopers/ping_lib_go v0.0.0-20200509215433-f79f1fd7f7f3 h1:2/XtM1TsH8jqmoXC4RNLQgHvwIokQT5MgrRMkrSXvko=
+github.com/AfatekDevelopers/ping_lib_go v0.0.0-20200509215433-f79f1fd7f7f3/go.mod h1:ivhyu56ZlYTe1mWorbh5r6C77PjZD5f+h/hHjuMmAQ8=
+golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
+golang.org/x/net v0.0.0-20200506145744-7e3656a0809f h1:QBjCr1Fz5kw158VqdE9JfI9cJnl/ymnJWAdMuinqL7Y=
+golang.org/x/net v0.0.0-20200506145744-7e3656a0809f/go.mod h1:qpuaurCH72eLCgpAm/N6yyVIVM9cpaDIP3A8BGJEC5A=
+golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd h1:xhmwyvizuTgC2qz7ZlMluP20uW+C3Rm0FD/WLDX8884=
+golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=

@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  pingcontainer:
+    image: devafatek/pingcontainerhttpgo
+    labels:
+      - "author=devafatek"
+    container_name: pingcontainer
+    restart: always
+    environment: 
+      PORT: 10001
+    ports:
+      - 10001:10001
