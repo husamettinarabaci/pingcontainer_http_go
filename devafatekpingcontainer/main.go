@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/AfatekDevelopers/ping_lib_go/devafatekping"
+	"github.com/HsmTeknoloji/ping_lib_go/devhsmtekping"
 )
 
 //ResultVal return value for request
@@ -93,7 +93,7 @@ func pingOp(ipAddress string, pingCount int, timeOutSecond int, verbose bool) (b
 
 	var retVal bool = false
 	var result string = ""
-	pinger, err := devafatekping.NewPinger(ipAddress)
+	pinger, err := devhsmtekping.NewPinger(ipAddress)
 	pinger.SetPrivileged(true)
 	pinger.Count = pingCount
 	pinger.Timeout = time.Duration(time.Second * time.Duration(timeOutSecond))
@@ -102,14 +102,14 @@ func pingOp(ipAddress string, pingCount int, timeOutSecond int, verbose bool) (b
 		retVal = false
 	}
 
-	pinger.OnRecv = func(pkt *devafatekping.Packet) {
+	pinger.OnRecv = func(pkt *devhsmtekping.Packet) {
 		if verbose {
 			result += fmt.Sprintf("%d bytes from %s: icmp_seq=%d time=%v\n",
 				pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt)
 		}
 	}
 
-	pinger.OnFinish = func(stats *devafatekping.Statistics) {
+	pinger.OnFinish = func(stats *devhsmtekping.Statistics) {
 		if verbose {
 			result += fmt.Sprintf("\n--- %s ping statistics ---\n", stats.Addr)
 			result += fmt.Sprintf("%d packets transmitted, %d packets received, %v%% packet loss\n",

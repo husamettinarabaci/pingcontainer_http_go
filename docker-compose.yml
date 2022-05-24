@@ -2,9 +2,9 @@ version: '3.5'
 
 services:
   pingcontainer:
-    image: devafatek/pingcontainerhttpgo
+    image: devhsmtek/pingcontainerhttpgo
     labels:
-      - "author=devafatek"
+      - "author=devhsmtek"
     container_name: pingcontainer
     restart: always
     environment: 

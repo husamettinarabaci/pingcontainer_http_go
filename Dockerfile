@@ -1,17 +1,17 @@
 # Start from the latest golang base image
 FROM golang:latest as builder
 
-LABEL maintainer="Afatek Developers <developer@afatek.com.tr>"
+LABEL maintainer="Hsmtek Developers <developer@hsmteknoloji.com>"
 
 WORKDIR /app
 
-COPY devafatekpingcontainer/go.mod devafatekpingcontainer/go.sum ./
+COPY devhsmtekpingcontainer/go.mod devhsmtekpingcontainer/go.sum ./
 
 RUN go mod download
 
-COPY devafatekpingcontainer/. .
+COPY devhsmtekpingcontainer/. .
 
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o devafatekpingcontainer .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o devhsmtekpingcontainer .
 
 
 ######## Start a new stage from scratch #######
@@ -23,7 +23,7 @@ RUN apk add --no-cache tzdata
 ENV TZ=Europe/Istanbul
 WORKDIR /root/
 
-ENV CONTAINER_TYPE=devafatekpingcontainer
+ENV CONTAINER_TYPE=devhsmtekpingcontainer
 
-COPY --from=builder /app/devafatekpingcontainer .
-CMD ["./devafatekpingcontainer"]
+COPY --from=builder /app/devhsmtekpingcontainer .
+CMD ["./devhsmtekpingcontainer"]
